@@ -2,35 +2,38 @@ using GrowlingPigeonStudio.Utilities;
 
 #nullable enable
 
-/// <summary>
-/// Animation id.
-/// </summary>
-public readonly struct AnimationID
+namespace GrowlingPigeonStudio.Animation2D
 {
   /// <summary>
-  /// Name for animation id.
+  /// Animation id.
   /// </summary>
-  public readonly string name;
-
-  /// <summary>
-  /// ID for animation id.
-  /// </summary>
-  public readonly int id;
-
-  /// <summary>
-  /// Initializes a new instance of the <see cref="AnimationID"/> struct.
-  /// </summary>
-  /// <param name="name">Name.</param>
-  /// <param name="id">Id.</param>
-  public AnimationID(string? name, int id)
+  public readonly struct AnimationID
   {
-    if (name is null)
-    {
-      GPSLogger.LogError("Name cannot be null!");
-      name = string.Empty;
-    }
+    /// <summary>
+    /// Name for animation id.
+    /// </summary>
+    public readonly string name;
 
-    this.name = string.Intern(name);
-    this.id = id;
+    /// <summary>
+    /// ID for animation id.
+    /// </summary>
+    public readonly int id;
+
+    /// <summary>
+    /// Initializes a new instance of the <see cref="AnimationID"/> struct.
+    /// </summary>
+    /// <param name="name">Name.</param>
+    /// <param name="id">Id.</param>
+    public AnimationID(string? name, int id)
+    {
+      if (name is null)
+      {
+        GPSLogger.LogError("Name cannot be null!");
+        name = string.Empty;
+      }
+
+      this.name = string.Intern(name);
+      this.id = id;
+    }
   }
 }

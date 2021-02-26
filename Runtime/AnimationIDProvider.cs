@@ -1,22 +1,25 @@
 #nullable enable
 
-/// <summary>
-/// Animation id provider.
-/// </summary>
-public class AnimationIDProvider
+namespace GrowlingPigeonStudio.Animation2D
 {
   /// <summary>
-  /// Next id.
+  /// Animation id provider.
   /// </summary>
-  private int nextID = 1;
-
-  /// <summary>
-  /// Provides animation id.
-  /// </summary>
-  /// <param name="name">Name of animation.</param>
-  /// <returns>Generated animation id.</returns>
-  public AnimationID GetAnimationID(string? name)
+  public class AnimationIDProvider
   {
-    return new AnimationID(name, this.nextID++);
+    /// <summary>
+    /// Next id.
+    /// </summary>
+    private int nextID = 1;
+
+    /// <summary>
+    /// Provides animation id.
+    /// </summary>
+    /// <param name="name">Name of animation.</param>
+    /// <returns>Generated animation id.</returns>
+    public AnimationID GetAnimationID(string? name)
+    {
+      return new AnimationID(name, this.nextID++);
+    }
   }
 }

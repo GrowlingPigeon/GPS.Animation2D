@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
+using GrowlingPigeonStudio.Animation2D;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
