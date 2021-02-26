@@ -1,0 +1,16 @@
+{
+    "name": "Unity.GPS.Animation2D",
+    "rootNamespace": "owlingPigeonStudio.Animation2D",
+    "references": [
+        "Unity.GPS.Utilities"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
