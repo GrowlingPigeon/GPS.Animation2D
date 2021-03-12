@@ -1,6 +1,6 @@
 {
     "name": "Unity.GPS.Animation2D",
-    "rootNamespace": "owlingPigeonStudio.Animation2D",
+    "rootNamespace": "GrowlingPigeonStudio.Animation2D",
     "references": [
         "Unity.GPS.Utilities"
     ],

@@ -22,6 +22,11 @@ namespace GrowlingPigeonStudio.Animation2D
     public bool blockOtherAnimations;
 
     /// <summary>
+    /// Animation transforms.
+    /// </summary>
+    public AnimationTransforms transform;
+
+    /// <summary>
     /// Number of frames per second.
     /// </summary>
     public float framesPerSecond = 16;

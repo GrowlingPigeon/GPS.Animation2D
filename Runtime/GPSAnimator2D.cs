@@ -60,6 +60,11 @@ namespace GrowlingPigeonStudio.Animation2D
     private float frame = 0f;
 
     /// <summary>
+    /// Current transforms.
+    /// </summary>
+    private AnimationTransforms currentTransforms = AnimationTransforms.NoTransform;
+
+    /// <summary>
     /// Gets current frame.
     /// </summary>
     public int CurrentFrame => Mathf.FloorToInt(this.frame);
@@ -253,6 +258,38 @@ namespace GrowlingPigeonStudio.Animation2D
       }
 
       this.target.sprite = sprite;
+      this.ApplyAnimationTransforms();
+    }
+
+    /// <summary>
+    /// Applies animatin transforms.
+    /// </summary>
+    private void ApplyAnimationTransforms()
+    {
+      if (this.currentAnimation is null || this.target is null)
+      {
+        return;
+      }
+
+      if (this.currentAnimation.transform == this.currentTransforms)
+      {
+        return;
+      }
+
+      bool performHorizontalFlip = this.currentAnimation.transform.HasFlag(AnimationTransforms.FlipHorizontal) ^
+        this.currentTransforms.HasFlag(AnimationTransforms.FlipHorizontal);
+      bool performVerticalFlip = this.currentAnimation.transform.HasFlag(AnimationTransforms.FlipVertical) ^
+        this.currentTransforms.HasFlag(AnimationTransforms.FlipVertical);
+
+      if (performHorizontalFlip)
+      {
+        this.target.flipX = !this.target.flipX;
+      }
+
+      if (performVerticalFlip)
+      {
+        this.target.flipY = !this.target.flipY;
+      }
     }
 
     /// <summary>
