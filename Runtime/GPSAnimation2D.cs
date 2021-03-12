@@ -1,3 +1,4 @@
+using GrowlingPigeonStudio.Utilities;
 using UnityEngine;
 
 #nullable enable
@@ -24,6 +25,7 @@ namespace GrowlingPigeonStudio.Animation2D
     /// <summary>
     /// Animation transforms.
     /// </summary>
+    [EnumFlag]
     public AnimationTransforms transform;
 
     /// <summary>

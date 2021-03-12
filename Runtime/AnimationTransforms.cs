@@ -7,7 +7,7 @@ namespace GrowlingPigeonStudio.Animation2D
   /// </summary>
   [Flags]
   public enum AnimationTransforms
-    : byte
+    : int
   {
     /// <summary>
     /// No transform.
