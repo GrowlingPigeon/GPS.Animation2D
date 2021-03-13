@@ -1,6 +1,6 @@
 {
 	"name": "com.growlingpigeon.animation2d",
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"displayName": "GPS Animation 2D",
 	"description": "2D animation classes - easier to use for sprite animations",
 	"unity": "2020.2",

@@ -290,6 +290,8 @@ namespace GrowlingPigeonStudio.Animation2D
       {
         this.target.flipY = !this.target.flipY;
       }
+
+      this.currentTransforms = this.currentAnimation.transform;
     }
 
     /// <summary>
