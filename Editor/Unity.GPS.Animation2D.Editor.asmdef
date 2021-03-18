@@ -1,0 +1,17 @@
+{
+    "name": "Unity.GPS.Animation2D.Editor",
+    "rootNamespace": "GrowlingPigeonStudio.Animation2D.Editor",
+    "references": [
+        "Unity.GPS.Animation2D",
+        "Unity.EditorCoroutines.Editor"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -31,6 +31,7 @@ namespace GrowlingPigeonStudio.Animation2D
     /// <summary>
     /// Number of frames per second.
     /// </summary>
+    [Min(1)]
     public float framesPerSecond = 16;
 
     /// <summary>
